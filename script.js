@@ -37,3 +37,16 @@ const teamMembers = [
     img: "img/female3.png"
   }
 ];
+
+
+function teamMarkup() {
+  const markup = <div class="bg-dark col-4 d-flex">
+
+    <div id="photo" class=""> <img src="https://picsum.photos/200" class="card-img-top">
+    </div>
+    <div id="person-info" class="card-body text-white p-3">
+      <h3>name</h3>
+      <p>role</p>
+      <p>email</p>
+    </div>
+}
