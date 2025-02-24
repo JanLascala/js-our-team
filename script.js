@@ -40,8 +40,9 @@ const teamMembers = [
 
 const member = {
   name,
-  job,
-  image,
+  role,
+  imag,
+  email,
 }
 
 for (let index = 0; index < teamMembers.length; index++) {
@@ -51,9 +52,9 @@ for (let index = 0; index < teamMembers.length; index++) {
 
 }
 
-function getMarkup(memeberjob) {
+function getMarkup(memberjob) {
 
-  const { image, job, name } = memeberjob
+  const { img, job, name, role } = memberjob
 
   const markup = `<div class="bg-dark col-4 d-flex">
 
