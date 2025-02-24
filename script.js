@@ -1,4 +1,6 @@
 console.log("works")
+const cardEl = document.getElementById('card')
+
 const teamMembers = [
   {
     name: "Marco Bianchi",
@@ -48,7 +50,7 @@ const member = {
 for (let index = 0; index < teamMembers.length; index++) {
   const thisMember = teamMembers[index];
   console.log(thisMember)
-  cardsEl.innerHTML += getMarkup
+  cardEl.innerHTML += getMarkup
 
 }
 
