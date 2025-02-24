@@ -39,8 +39,8 @@ const teamMembers = [
 ];
 
 
-function teamMarkup() {
-  const markup = <div class="bg-dark col-4 d-flex">
+function getMarkup() {
+  const markup = `<div class="bg-dark col-4 d-flex">
 
     <div id="photo" class=""> <img src="https://picsum.photos/200" class="card-img-top">
     </div>
@@ -48,5 +48,7 @@ function teamMarkup() {
       <h3>name</h3>
       <p>role</p>
       <p>email</p>
-    </div>
+    </div>`
 }
+
+
