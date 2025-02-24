@@ -38,16 +38,31 @@ const teamMembers = [
   }
 ];
 
+const member = {
+  name,
+  job,
+  image,
+}
 
-function getMarkup() {
+for (let index = 0; index < teamMembers.length; index++) {
+  const thisMember = teamMembers[index];
+  console.log(thisMember)
+  cardsEl.innerHTML += getMarkup
+
+}
+
+function getMarkup(memeberjob) {
+
+  const { image, job, name } = memeberjob
+
   const markup = `<div class="bg-dark col-4 d-flex">
 
-    <div id="photo" class=""> <img src="https://picsum.photos/200" class="card-img-top">
+    <div id="photo" class=""> <img src="${member.img}" class="card-img-top">
     </div>
     <div id="person-info" class="card-body text-white p-3">
-      <h3>name</h3>
-      <p>role</p>
-      <p>email</p>
+      <h3>${member.name}</h3>
+      <p>${member.job}</p>
+      <p>${member.email}</p>
     </div>`
 }
 
